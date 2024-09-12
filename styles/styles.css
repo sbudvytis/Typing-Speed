@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(52, 52, 52);
+  text-align: center;
+  font-size: x-large;
+}
+
+h2 {
+  color: rgb(244, 238, 224);
+  font-family: "Inconsolata";
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+#header {
+  color: rgb(244, 238, 224);
+  font-family: "Inconsolata";
+  font-weight: bold;
+  width: 80vw;
+  align-self: left;
+  border-radius: 0.7rem;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#icon {
+  margin: 15px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#metrics-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  column-gap: 10px;
+  text-align: center;
+  align-self: center;
+  justify-items: center;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(52, 52, 52);
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 10px;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.metrics {
+  display: inline-block;
+  background-color: rgb(86, 86, 86);
+  width: 100%;
+  height: 85%;
+  padding: 25px;
+  align-self: center;
+  justify-items: center;
+  border-radius: 10px;
+  color: rgb(244, 238, 224);
+  font-family: "Inconsolata";
+  font-weight: bold;
+}
+
+#wpm_con,
+#acc_con {
+  color: rgb(180, 160, 60);
+  font-size: 1.5rem;
+}
+
+#time_con {
+  color: rgb(180, 160, 60);
+  font-size: 1.5rem;
+}
+
+#main-container {
+  min-width: 50vw;
+  max-height: 60vh;
+  height: fit-content;
+  width: 80vw;
+  padding: 5px;
+  align-self: center;
+  border-radius: 0.7rem;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+#typing-field {
+  background-color: rgb(86, 86, 86);
+  color: rgba(244, 238, 224, 0.5);
+  margin: 2.5px;
+  max-height: 9rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  padding: 1rem;
+  line-height: 2rem;
+  min-width: 2rem;
+  width: fill;
+  font-family: "Inconsolata", monospace;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Hides the horizontal scrollbar */
+#typing-field::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+#info-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: rgb(244, 238, 224);
+  margin: auto;
+  margin-top: 30px;
+  height: 100%;
+  font-family: "Inconsolata";
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.key {
+  width: fit-content;
+  height: 35px;
+  color: rgba(244, 238, 224);
+  text-align: center;
+  align-self: center;
+  justify-items: center;
+  font-size: large;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  background-color: rgb(86, 86, 86);
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  font-size: 1rem;
+  color: rgb(151, 151, 151);
+}
+
+#results-table {
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  justify-items: center;
+  margin: auto;
+  padding: 4px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+#results-table th,
+#results-table td {
+  background-color: rgb(86, 86, 86);
+  color: rgb(244, 238, 224);
+  padding: 10px;
+  font-family: "Inconsolata";
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid rgb(52, 52, 52);
+}
+
+#input-field-hidden {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(52, 52, 52);
+  background: none;
+  outline: none;
+  border: none;
+  height: 0;
+  width: 100%;
+}
+
+#start-button {
+  width: 100px;
+  height: 50px;
+  color: rgba(244, 238, 224);
+  font-family: "Inconsolata";
+  font-size: large;
+  position: relative;
+  margin: 20px;
+  border: none;
+  background-color: rgb(180, 160, 60);
+  border-radius: 10px;
+}
+
+.wrong {
+  background-color: rgb(195, 0, 0);
+}
+
+.correct {
+  color: rgb(244, 238, 224);
+  background-color: green;
+}
+
+.cursor-highlight {
+  background-color: rgba(47, 47, 47, 0.4);
+}

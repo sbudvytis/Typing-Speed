@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+    />
+    <title>Typing test Application</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="icon"><img src="icons/computer.png" alt="Icon"></div>
+      <div>Typing test Application</div>
+    </header>
+    <main>
+      <section id="metrics-container">
+        <div class="metrics" id="timer">Timer <span id="time_con"></span></div>
+        <div class="metrics" id="wpm">WPM <span id="wpm_con"></span></div>
+        <div class="metrics" id="accuracy">
+          Accuracy <span id="acc_con"></span>
+        </div>
+      </section>
+      <div id="main-container">
+        <pre id="typing-field"></pre>
+        <input type="text" id="input-field-hidden" />
+        <div id="input-box"></div>
+      </div>
+      <button id="start-button">Start</button>
+      <section id="info-container">
+        <div class="info">
+          Press
+          <div class="key">Esc</div>
+          to reset
+        </div>
+        <div class="info">
+          Press
+          <div class="key">Enter</div>
+          or
+          <div class="key">Again</div>
+          to restart
+        </div>
+      </section>
+      <table id="results-table">
+        <h2>5 most recent results</h2>
+        <thead>
+          <tr>
+            <th>Accuracy</th>
+            <th>WPM</th>
+            <th>Improvement (%)</th>
+          </tr>
+        </thead>
+      </table>
+    </main>
+
+    <script type="module" src="scripts/script.js"></script>
+  </body>
+</html>
